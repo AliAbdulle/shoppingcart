@@ -12,12 +12,12 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Photos />
-        </Route>{" "}
+        </Route>
         <Route path="/cart">
           <Cart />
-        </Route>{" "}
-      </Switch>{" "}
-      <h3> Hello Cart </h3>{" "}
+        </Route>
+      </Switch>
+      <h3> Hello Cart </h3>
     </div>
   );
 }
