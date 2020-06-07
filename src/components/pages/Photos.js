@@ -1,4 +1,5 @@
 import React, {useContext} from 'react'
+import Image from '/'
 
 function Photos() {
     const {allPhotoes} =useContext(Context)
