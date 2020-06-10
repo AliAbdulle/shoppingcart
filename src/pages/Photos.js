@@ -1,12 +1,16 @@
 import React, {useContext} from 'react'
-import Image from '/'
+
+import Image from '../components/Image'
+import {Context} from '../Context'
+import {getClass} from '..//utils'
 
 function Photos() {
-    const {allPhotoes} =useContext(Context)
+    const {allPhotos} = useContext(Context)
 
-    const imageElements = allPhotoes((img, 1) => (
-        <Image key={img.id} img={img} className={getClasse(<index of image>)} />
+    const imageElements = allPhotos.map((img, i) => (
+        <Image key={img.id} img={img} className={getClass(i)}>} />
     ))
+    
     return (
         <main className="cart-page">
             <h1>Check out</h1>
