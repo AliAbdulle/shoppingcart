@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Photos from './pages/Photos'
 
 const Context = React.createContext()
 
@@ -11,7 +12,15 @@ function ContextProvider({children}) {
             .then(res => res.json())
             .then(data => setAllPhotos(data))
     }, [])
-    console.log(allPhotos)
+
+    function toggleFavorite(id) {
+        const updatedArr = allPhotos.map(photo => {
+            if(photo.id === id) {
+                return {...photo, isFavorite: !photo.isFavorite}
+            }
+            return photo
+        })
+    }
     return (
         <Context.Provider value={{allPhotos}}>
             {children}
