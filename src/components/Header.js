@@ -5,7 +5,7 @@ function Header() {
     return(
         <header>
             <h2>Pic Some</h2>
-           <Link to="/cart"><i className="ri-shopping-cart-line ri-fw ri-2x"></i></Link> 
+           <Link to="/cart" className="cart-link"><i className="ri-shopping-cart-line ri-fw ri-2x"></i></Link> 
 
         </header>
     )
