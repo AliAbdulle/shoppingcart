@@ -2,6 +2,7 @@ import React, {useState, useContext} from "react"
 import {Context} from "../Context"
 
 function Image({className, img}) {
+    //intialize the state
     const [hovered, setHovered] = useState(false)
     const {toggleFavorite} = useContext(Context)
     
