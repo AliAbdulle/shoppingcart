@@ -6,7 +6,7 @@ import {getClass} from '../Utils/Index'
 
 function Photos() {
     const {allPhotos} = useContext(Context)
-
+    const likeable = fixAble
     const imageElements = allPhotos.map((img, i) => (
         <Image key={img.id} img={img} className={getClass(i)} />
     ))
@@ -14,6 +14,7 @@ function Photos() {
     return (
         <main className="photoes">
             {imageElements}
+            {fixAble}
         </main>
     )
 }
