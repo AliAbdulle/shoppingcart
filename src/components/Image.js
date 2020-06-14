@@ -10,10 +10,11 @@ function Image({className, img}) {
         if (img.IsFavorite) {
             return <i className="ri-heart-fill favorite"></i>
         }else if (hovered) {
-                
+
+            return <i className="ri-heart-line favorite"></i>
         }
 
-    }= hovered && <i className="ri-heart-line favorite"></i>
+    }
 
     const carttIcon = hovered && <i className="ri-add-circle-line cart"></i>
     return (
