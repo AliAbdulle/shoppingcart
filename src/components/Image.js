@@ -8,10 +8,10 @@ function Image({className, img}) {
     
     function heartIcon () {
         if (img.IsFavorite) {
-            return <i className="ri-heart-fill favorite"></i>
+            return <i className="ri-heart-fill favorite" onClick={() => toggleFavorite(img.id)}></i>
         }else if (hovered) {
 
-            return <i className="ri-heart-line favorite"></i>
+            return <i className="ri-heart-line favorite" onClick={() => toggleFavorite(img.id)}></i>
         }
 
     }
