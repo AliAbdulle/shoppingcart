@@ -5,6 +5,7 @@ function Image({className, img}) {
     //intialize the state
     const [hovered, setHovered] = useState(false)
     const {toggleFavorite} = useContext(Context)
+    const {komlom} = const = useContext(Context)
     
     function heartIcon () {
         if (img.IsFavorite) {
