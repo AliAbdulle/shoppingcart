@@ -15,7 +15,7 @@ function Image({className, img}) {
         }
 
     }
-
+    //logic hover function
     const carttIcon = hovered && <i className="ri-add-circle-line cart"></i>
     return (
         <div className={`${className} image-container`}
