@@ -33,7 +33,11 @@ function Image({className, img}) {
 
 Image.prototype ={
     className: prototype.string,
-    img: ???
+    img: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+        IsFavorite: PropTypes.bool
+    })
 }
 
 export default Image
